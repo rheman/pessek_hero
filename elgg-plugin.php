@@ -17,4 +17,17 @@ return [
 			'resource' => 'hero/cover/upload',
 		],
 	],
+        'hooks' => [
+                'prepare' => [
+                        'menu:title' => [
+                                'Elgg\Groups\Menus\Title::register' => [
+                                        'unregister' => true,
+                                ],
+                                'Elgg\Profile\Menus\Title::register' => [
+                                        'unregister' => true,
+                                ],
+                        ],
+
+                ],
+        ],
 ];
