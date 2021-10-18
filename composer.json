@@ -1,0 +1,36 @@
+{
+	"name": "pessek/pessek_hero",
+	"type": "elgg-plugin",
+	"description": "Replaces owner block with cover hero",
+	"keywords": [
+		"elgg", "plugin", "autocomplete", "forms"
+	],
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Hermand PESSEK",
+			"email": "rhemandaddy@gmail.com"
+		}
+	],
+	"extra": {
+		"installer-name": "pessek_hero"
+	},
+	"require": {
+		"php": ">=7.4",
+		"composer/installers": "^1.0.8"
+	},
+	"autoload": {
+		"psr-0": {
+			"": "classes/"
+		}
+	},
+	"repositories": [
+		{
+            		"type": "composer",
+            		"url": "https://asset-packagist.org"
+		}
+	],
+        "conflict": {
+                "elgg/elgg": "<4.0"
+        }
+}
